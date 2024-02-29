@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Red+Hat+Display:wght@500;700;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  font-size: 62.5%;
+
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+
+  margin: 0;
+  padding: 0;
+}
+body { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "inter", sans-serif;
+
+  height: 100vh;
+  min-width: 37.0rem;
+
+  background-color: var(--OffBlack);
+  }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 38rem;
+  height: 61rem;
+  padding: 4rem;
+  border-radius: 1rem;
+
+  background-color: var(--DarkGrey);
+}
+.profile header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile header img {
+  width: 9rem;
+  border-radius: 50%;
+}
+.profile header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+
+  color: var(--White);
+}
+.profile header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+
+  color: var(--Green);
+}
+.profile p {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  color: var(--White);
+}
+.social {
+  width: 100%;
+  margin-top: 2rem;
+}
+.social nav {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  width: 100%;
+  height: 4.5rem;
+  border-radius: 1rem;
+
+  color: var(--White);
+  background-color: var(--Grey);
+}
+.social a:hover {
+  font-weight: 600;
+
+  color: var(--DarkGrey);
+  background-color: var(--Green);
+}
+@media screen and (max-width:440px) {
+  main {
+    width: 32rem;
+    padding: 2.5rem; 
+  }
+}
+.attribution {
+  color: var(--White);
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
